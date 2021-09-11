@@ -1,5 +1,5 @@
-import express from 'express'
-import db      from '../database/knex'
+const express = require('express')
+const db      = require('../database/knex')
 
 const msgRoute = express.Router()
 
@@ -10,4 +10,4 @@ msgRoute.route('/').get(async(req,res)=>{
                 .catch(err => res.status(500).json(err))
 })
 
-export default msgRoute
+module.exports = msgRoute  
