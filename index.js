@@ -2,7 +2,7 @@ const express       = require('express')
 const cors          = require('cors')
 const messageRouter = require('./routes/message')
 
-const port = 3003
+const port = process.env.PORT || 3003
 const app  = express()
 
 app.use(cors({origin:'*'}))
