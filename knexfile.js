@@ -1,5 +1,5 @@
 
-module.exports = {
+/*module.exports = {
 
   development: {
     client: 'postgresql',
@@ -34,5 +34,14 @@ module.exports = {
     client: 'pg',
     connection: process.env.DATABASE_URL
   }
+
+};*/
+
+
+
+module.exports = {
+
+    client: 'pg',
+    connection: process.env.DATABASE_URL
 
 };
